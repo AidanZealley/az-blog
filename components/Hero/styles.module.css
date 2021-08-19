@@ -1,11 +1,19 @@
 .hero {
   background-color: var(--shifting-shade-60);
   width: 100%;
+  height: 100%;
   position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  aspect-ratio: 3/2;
+  padding-bottom: 66.6666%;
+}
+
+@supports (aspect-ratio: 3/2) {
+  .hero {
+    aspect-ratio: 3/2;
+    padding-bottom: 0;
+  }
 }
 
 .hero:before {

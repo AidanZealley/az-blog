@@ -1,0 +1,26 @@
+.button {
+  background-color: var(--brand-1);
+  border-radius: var(--radius-xxs);
+  padding: var(--spacing-s) var(--spacing-m);
+  font: inherit;
+  font-weight: 900;
+  color: var(--shade-90);
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xxs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.button:hover {
+  background-color: var(--background-alt);
+  color: var(--text-color-alt);
+  text-decoration: none;
+}
+
+.small {
+  font-size: var(--text-xxs);
+  padding: var(--spacing-xs) var(--spacing-s);
+}

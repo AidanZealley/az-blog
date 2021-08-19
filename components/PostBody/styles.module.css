@@ -1,0 +1,26 @@
+.body {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-m);
+}
+
+.body > p > img {
+  display: block;
+  width: 100%;
+}
+
+.body > p {
+  font-size: var(--text-m);
+  line-height: 1.6;
+}
+
+.body > p > code {
+  font-size: var(--text-xs);
+  padding: var(--spacing-xs);
+  background-color: var(--shifting-shade-20);
+  border-radius: var(--radius-xs);
+  vertical-align: middle;
+}

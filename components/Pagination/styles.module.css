@@ -1,0 +1,33 @@
+.pagination {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  align-items: center;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  grid-column: 2;
+}
+
+.prev {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 1;
+}
+
+.next {
+  display: flex;
+  justify-content: flex-start;
+  grid-column: 3;
+}
+
+@media all and (max-width: 40rem) {
+  .buttonText {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+}

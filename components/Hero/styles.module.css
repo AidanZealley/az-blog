@@ -1,0 +1,22 @@
+.hero {
+  background-color: var(--shifting-shade-60);
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  aspect-ratio: 3/2;
+}
+
+.hero:before {
+  content: "";
+  background-color: var(--shifting-shade-20);
+  background-image: radial-gradient(circle at bottom, var(--shifting-shade-50), transparent);
+  border-radius: var(--radius-xs);
+  position: absolute;
+  top: calc(var(--spacing-xl) * -1);
+  right: calc(var(--spacing-xxl) * -1);
+  bottom: 0;
+  left: calc(var(--spacing-xxl) * -1);
+  z-index: -1;
+}

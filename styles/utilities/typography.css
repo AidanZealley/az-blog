@@ -1,0 +1,59 @@
+.text-xxs {
+  font-size: var(--text-xxs);
+}
+
+.text-m {
+  font-size: var(--text-m);
+}
+
+.text-xl {
+  font-size: var(--text-xl);
+}
+
+.weight-100 {
+  font-weight: 100;
+}
+
+.weight-200 {
+  font-weight: 200;
+}
+
+.weight-300 {
+  font-weight: 300;
+}
+
+.weight-400 {
+  font-weight: 400;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.weight-800 {
+  font-weight: 800;
+}
+
+.weight-900 {
+  font-weight: 900;
+}
+
+.color-good {
+  color: var(--good);
+}
+
+.color-warn {
+  color: var(--warn);
+}
+
+.color-bad {
+  color: var(--bad);
+}

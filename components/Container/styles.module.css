@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  max-width: var(--site-width);
+  margin: 0 auto;
+  padding: 0 var(--site-gutter);
+}
+
+.content {
+  max-width: var(--content-width);
+}

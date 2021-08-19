@@ -1,0 +1,89 @@
+:root {
+  --base-font-size: clamp(0.8125rem, 1.1vw, 1rem);
+
+  --spacing-base: 1rem;
+  --spacing-xxs: calc(var(--spacing-base) / 3);
+  --spacing-xs: calc(var(--spacing-base) / 2);
+  --spacing-s: var(--spacing-base);
+  --spacing-m: calc(var(--spacing-base) * 2);
+  --spacing-l: calc(var(--spacing-base) * 3);
+  --spacing-xl: calc(var(--spacing-base) * 5);
+  --spacing-xxl: calc(var(--spacing-base) * 8);
+
+  --radius-xxs: 0.15rem;
+  --radius-xs: var(--spacing-xxs);
+  --radius-s: var(--spacing-xs);
+  --radius-m: var(--spacing-s);
+  --radius-rounded: var(--spacing-xl);
+
+  --text-xxs: 0.8rem;
+  --text-xs: 1.1rem;
+  --text-s: 1.3rem;
+  --text-m: 1.6rem;
+  --text-l: 2rem;
+  --text-xl: 2.5rem;
+  --text-xxl: 3.2rem;
+
+  --color-base: 200;
+
+  --shade-0:  hsla(var(--color-base), 0%, 100%, 100%);
+  --shade-10:  hsla(var(--color-base), 5%, 90%, 100%);
+  --shade-20:  hsla(var(--color-base), 10%, 80%, 100%);
+  --shade-30:  hsla(var(--color-base), 15%, 70%, 100%);
+  --shade-40:  hsla(var(--color-base), 20%, 60%, 100%);
+  --shade-50:  hsla(var(--color-base), 25%, 50%, 100%);
+  --shade-60:  hsla(var(--color-base), 30%, 40%, 100%);
+  --shade-70:  hsla(var(--color-base), 35%, 30%, 100%);
+  --shade-80:  hsla(var(--color-base), 40%, 20%, 100%);
+  --shade-90:  hsla(var(--color-base), 45%, 10%, 100%);
+  --shade-100:  hsla(var(--color-base), 100%, 0, 100%);
+
+  --shifting-shade-0:  hsla(var(--color-base), 0%, 100%, 100%);
+  --shifting-shade-10:  hsla(var(--color-base), 5%, 90%, 100%);
+  --shifting-shade-20:  hsla(var(--color-base), 10%, 80%, 100%);
+  --shifting-shade-30:  hsla(var(--color-base), 15%, 70%, 100%);
+  --shifting-shade-40:  hsla(var(--color-base), 20%, 60%, 100%);
+  --shifting-shade-50:  var(--shade-50);
+  --shifting-shade-60:  hsla(var(--color-base), 30%, 40%, 100%);
+  --shifting-shade-70:  hsla(var(--color-base), 35%, 30%, 100%);
+  --shifting-shade-80:  hsla(var(--color-base), 40%, 20%, 100%);
+  --shifting-shade-90:  hsla(var(--color-base), 45%, 10%, 100%);
+  --shifting-shade-100:  hsla(var(--color-base), 100%, 0, 100%);
+
+  --brand-1: #00FFBB;
+
+  --good: #50d38d;
+  --warn: #fdc300;
+  --bad: #f60d21;
+
+  --text-color: var(--shifting-shade-90);
+  --text-color-alt: var(--shifting-shade-10);
+
+  --background: var(--shifting-shade-10);
+  --background-alt: var(--shifting-shade-90);
+
+  --border-color: var(--shifting-shade-20);
+
+  --site-width: 72rem;
+  --content-width: 50em;
+  --para-width: 42em;
+  --site-gutter: var(--spacing-m);
+  --header-height: 5rem;
+
+  --easing: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shifting-shade-0:  hsla(var(--color-base), 100%, 0, 100%);
+    --shifting-shade-10:  hsla(var(--color-base), 45%, 10%, 100%);
+    --shifting-shade-20:  hsla(var(--color-base), 40%, 20%, 100%);
+    --shifting-shade-30:  hsla(var(--color-base), 35%, 30%, 100%);
+    --shifting-shade-40:  hsla(var(--color-base), 30%, 40%, 100%);
+    --shifting-shade-60:  hsla(var(--color-base), 20%, 60%, 100%);
+    --shifting-shade-70:  hsla(var(--color-base), 15%, 70%, 100%);
+    --shifting-shade-80:  hsla(var(--color-base), 10%, 80%, 100%);
+    --shifting-shade-90:  hsla(var(--color-base), 5%, 90%, 100%);
+    --shifting-shade-100:  hsla(var(--color-base), 0%, 100%, 100%);
+  }
+}

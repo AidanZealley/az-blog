@@ -1,0 +1,9 @@
+.logo {
+  font-size: var(--text-l);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.logo:hover {
+  text-decoration: underline;
+}

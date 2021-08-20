@@ -1,5 +1,5 @@
 :root {
-  --base-font-size: clamp(0.8125rem, 1.1vw, 1rem);
+  --base-font-size: clamp(0.8125rem, 0.25rem + 1vw, 1rem);
 
   --spacing-base: 1rem;
   --spacing-xxs: calc(var(--spacing-base) / 3);

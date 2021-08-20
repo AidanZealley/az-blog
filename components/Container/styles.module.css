@@ -3,8 +3,19 @@
   max-width: var(--site-width);
   margin: 0 auto;
   padding: 0 var(--site-gutter);
+  box-sizing: content-box;
 }
 
 .content {
   max-width: var(--content-width);
+}
+
+.para {
+  max-width: var(--para-width);
+}
+
+@media all and (max-width: 50rem) {
+  .container {
+    max-width: var(--para-width);
+  }
 }

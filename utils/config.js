@@ -8,17 +8,14 @@ export const config = {
   },
   navLinks: [
     {
-      text: 'Blog',
-      url: '/blog',
-      external: false
+      label: 'Home',
+      url: '/',
+      external: false,
     },
     {
-      text: 'Github',
-      url: 'https://github.com/AidanZealley',
-      external: true
-    }
+      label: 'Blog',
+      url: '/blog',
+      external: false,
+    },
   ],
-  pagination: {
-    pageSize: 1,
-  },
-};
+}

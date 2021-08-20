@@ -5,7 +5,7 @@ import { PostHeader } from "@components/PostHeader";
 import { PostBody } from "@components/PostBody";
 
 export default function PostWrapper({ post }) {
-  const { title, coverImage, tags, body } = post;
+  const { date, title, coverImage, tags, body, demoLink } = post;
 
   return (
     <>
@@ -16,7 +16,7 @@ export default function PostWrapper({ post }) {
       />
 
       <div className="flex-col gap-xl">
-        <PostHeader title={title} coverImage={coverImage} tags={tags}/>
+        <PostHeader date={date} title={title} coverImage={coverImage} tags={tags} demoLink={demoLink}/>
         <PostBody body={body}/>
       </div>
     </>

@@ -24,3 +24,13 @@
   font-size: var(--text-xxs);
   padding: var(--spacing-xs) var(--spacing-s);
 }
+
+.light {
+  background-color: var(--shifting-shade-20);
+  color: var(--text-color);
+}
+
+.light:hover {
+  background-color: var(--shifting-shade-30);
+  color: var(--text-color);
+}

@@ -1,20 +1,30 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import OpenInNewRoundedIcon from '@material-ui/icons/OpenInNewRounded';
-import styles from './styles.module.css';
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import OpenInNewRoundedIcon from '@material-ui/icons/OpenInNewRounded'
+import { config } from '@utils/config'
+import styles from './styles.module.css'
 
-export const Nav = ({ navLinks }) => {
-  const isSameSiteSection = (pathname, navUrl) => `/${pathname.split('/')[1]}` === navUrl
+export const Nav = () => {
+  const { navLinks } = config
 
-  const router = useRouter();
+  const isSameSiteSection = (path, configUrl) => `/${path.split('/')[1]}` === configUrl
+
+  const { pathname } = useRouter()
 
   return (
     <nav className={`${styles.nav}`}>
-      {navLinks.map((navlink, index) => (
-        <Link key={index} href={navlink.url}>
-          <a className={`${styles.link}${isSameSiteSection(router.pathname, navlink.url) ? ` ${styles.active}` : ''}`}>{navlink.text}
+      {navLinks.map(({ label, url, external }, index) => (
+        <Link key={index} href={url}>
+          <a
+            className={`
+              ${styles.link}
+              ${isSameSiteSection(pathname, url) ? ` ${styles.active}` : ''}
+            `}
+            target={external ? '_blank' : ''}
+          >
+            {label}
             {
-              navlink.external
+              external
               ? <OpenInNewRoundedIcon fontSize="small"/>
               : ''
             }
@@ -22,5 +32,5 @@ export const Nav = ({ navLinks }) => {
         </Link>
       ))}
     </nav>
-  );
+  )
 }

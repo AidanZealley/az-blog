@@ -2,7 +2,19 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
+  padding-top: var(--spacing-l);
+  position: relative;
 }
+/* 
+.layout:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 20em;
+  background-image: radial-gradient(ellipse at top, var(--shifting-shade-20), transparent);
+  background-position: top;
+} */
 
 .main {
   flex: 1;

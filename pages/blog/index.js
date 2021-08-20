@@ -1,6 +1,5 @@
 import { getPaginatedPostSummaries } from '@utils/contentful'
 import { config } from '@utils/config'
-import { Intro } from '@components/Intro'
 import { PostList } from '@components/PostList'
 import { Pagination } from '@components/Pagination'
 
@@ -10,10 +9,6 @@ const BlogIndex = ({ posts, currentPage, totalPages }) => {
 
   return (
     <div className="flex-col gap-xl">
-      <Intro variant="short">
-        <h1 className="text-5xl leading-tight">Blog</h1>
-      </Intro>
-
       <PostList posts={posts}/>
           
       <Pagination

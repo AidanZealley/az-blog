@@ -12,14 +12,12 @@ export const Pagination = ({ totalPages, currentPage, prevDisabled, nextDisabled
       : `/blog/page/${currentPage - 1}`
   const nextPageUrl = `/blog/page/${currentPage + 1}`
 
-  console.log(currentPage)
-
   return (
     <Container>
       <div className={styles.pagination}>        
         <div className={styles.prev}>
           {!prevDisabled &&
-            <Button href={prevPageUrl} size="small">
+            <Button href={prevPageUrl} size="small" color="light">
               <KeyboardArrowLeftRoundedIcon fontSize="small"/>
               <span className={styles.buttonText}>Prev</span>
             </Button>
@@ -30,7 +28,7 @@ export const Pagination = ({ totalPages, currentPage, prevDisabled, nextDisabled
         
         <div className={styles.next}>
           {!nextDisabled &&
-            <Button href={nextPageUrl} size="small">
+            <Button href={nextPageUrl} size="small" color="light">
               <span className={styles.buttonText}>Next</span>
               <KeyboardArrowRightRoundedIcon fontSize="small"/>
             </Button>

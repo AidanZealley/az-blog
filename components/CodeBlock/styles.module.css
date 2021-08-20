@@ -1,0 +1,3 @@
+.code {
+  max-width: calc(100vw - (var(--site-gutter) * 2));
+}

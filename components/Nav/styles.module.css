@@ -9,10 +9,26 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
+  font-weight: 300;
+  position: relative;
 }
 
-.link:hover,
-.active {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
+.link:hover {
+  text-decoration: none;
+}
+
+.link:hover:after,
+.active:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + var(--spacing-xs));
+  height: 3px;
+  width: 100%;
+  background-color: var(--brand-1);
+}
+
+@media all and (max-width: 25rem) {
+  .nav {
+    gap: var(--spacing-s);
+  } 
 }

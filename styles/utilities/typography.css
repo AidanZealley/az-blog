@@ -46,6 +46,10 @@
   font-weight: 900;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .color-good {
   color: var(--good);
 }

@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { config } from '@utils/config'
+import { getRecentPostList } from '../utils/contentful'
 import { Intro } from '@components/Intro'
+import { Container } from '@components/Container'
+import { PostList } from '@components/PostList'
 
-export default function Home() {
+export default function Home({ recentPosts }) {
   const { title, description } = config;
 
   return (
@@ -17,8 +20,29 @@ export default function Home() {
       </Head>
 
       <Intro>
-        <h1 className="text-5xl leading-tight">Random stuff made by <span className="font-black italic whitespace-nowrap"><Link href="https://github.com/AidanZealley" target="_blank">Aidan Zealley</Link></span></h1>
+        <div className="flex-col gap-s">
+          <h3 className="weight-100">Random stuff by</h3>
+          <h1 className="italic">Aidan Zealley</h1>
+        </div>
       </Intro>
+
+      <div className="flex-col gap-l mt-xl">
+        <Container>
+          <h2 className="weight-200">Latest Blog Post</h2>
+        </Container>
+
+        <PostList posts={recentPosts}/>
+      </div>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const recentPosts = await getRecentPostList();
+
+  return {
+    props: {
+      recentPosts,
+    },
+  };
 }

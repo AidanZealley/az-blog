@@ -1,3 +1,11 @@
 .postList {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxl);
 }

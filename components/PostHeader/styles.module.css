@@ -4,13 +4,20 @@
   flex-direction: column;
   gap: var(--spacing-l);
   overflow: hidden;
+  margin-top: calc(var(--spacing-xxl) * -1);
+  padding-top: var(--spacing-xxl);
 }
 
 .summary {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-s);
+  gap: var(--spacing-m);
   align-items: center;
+  position: relative;
+}
+
+.headingWrap {
+  position: relative;
 }
 
 .summaryHeading {
@@ -21,6 +28,78 @@
   text-align: center;
 }
 
+.sticker {
+  position: absolute;
+  top: -3rem;
+  right: -1rem;
+  background-color: var(--brand-1);
+  color: var(--shade-90);
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  padding: var(--spacing-s);
+  transform: rotate(10deg);
+  font-size: var(--text-xxs);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  transition: transform 0.5s var(--easing);
+}
+
+.stickerText {
+  transition: transform 0.5s var(--easing);
+  line-height: 1.2;
+}
+
+.stickerIconWrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.5s var(--easing);
+  pointer-events: none;
+}
+
+.stickerIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  background: var(--text-color);
+  border-radius: 50%;
+  transition: transform 0.5s var(--easing);
+  color: var(--text-color-alt);
+}
+
+.sticker:hover {
+  background-color: var(--shade-70);
+  text-decoration: none;
+  color: var(--shade-10);
+}
+
+.sticker:hover .stickerIconWrap {
+  transform: rotate(360deg);
+}
+
+.sticker:hover .stickerIcon {
+  color: var(--text-color-alt);
+  transform: rotate(-360deg);
+}
+
 .imageContainer {
   width: 100%;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  gap: var(--spacing-xs);
+  padding-left: var(--spacing-s)
 }

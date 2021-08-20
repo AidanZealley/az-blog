@@ -15,11 +15,11 @@
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-s);
+  max-width: var(--content-width)
 }
 
 .tagsWrap {
   width: 100%;
-  max-width: var(--content-width);
 }
 
 .summary {
@@ -36,10 +36,9 @@
   font-style: italic;
   line-height: 1.1;
   width: 100%;
-  max-width: var(--content-width)
 }
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 50rem) {
   .postTile {
     display: grid;
     width: 100%;

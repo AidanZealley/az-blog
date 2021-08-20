@@ -48,8 +48,12 @@
   place-items: center;
 }
 
+.iconLink svg {
+  transition: none;
+}
+
 .iconLink:hover svg {
-  fill: var(--brand-1);
+  fill: var(--shifting-shade-40);
 }
 
 @media all and (max-width: 30rem) {

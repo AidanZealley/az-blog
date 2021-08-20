@@ -50,7 +50,7 @@
   --shifting-shade-90:  hsla(var(--color-base), 45%, 10%, 100%);
   --shifting-shade-100:  hsla(var(--color-base), 100%, 0, 100%);
 
-  --brand-1: #00FFBB;
+  --brand-1: hsl(164, 100%, 45%);
 
   --good: #50d38d;
   --warn: #fdc300;
@@ -77,6 +77,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --brand-1: hsl(164, 100%, 50%);
+
     --shifting-shade-0:  hsla(var(--color-base), 100%, 0, 100%);
     --shifting-shade-10:  hsla(var(--color-base), 45%, 10%, 100%);
     --shifting-shade-20:  hsla(var(--color-base), 40%, 20%, 100%);

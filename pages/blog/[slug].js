@@ -7,6 +7,8 @@ import { PostBody } from "@components/PostBody";
 export default function PostWrapper({ post }) {
   const { date, title, coverImage, tags, body, demoLink } = post;
 
+  console.log(body)
+
   return (
     <>
       <PageMeta

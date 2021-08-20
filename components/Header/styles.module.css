@@ -52,7 +52,7 @@
   fill: var(--brand-1);
 }
 
-@media all and (max-width: 25rem) {
+@media all and (max-width: 30rem) {
   .navWrap,
   .logoWrap,
   .social {

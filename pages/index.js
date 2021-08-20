@@ -21,14 +21,14 @@ export default function Home({ recentPosts }) {
 
       <Intro>
         <div className="flex-col gap-s">
-          <h3 className="weight-100">Random stuff by</h3>
+          <h3 className="weight-300">Random stuff by</h3>
           <h1 className="italic">Aidan Zealley</h1>
         </div>
       </Intro>
 
       <div className="flex-col gap-l mt-xl">
         <Container>
-          <h2 className="weight-200">Latest Blog Post</h2>
+          <h2 className="weight-300">Latest Blog Post</h2>
         </Container>
 
         <PostList posts={recentPosts}/>

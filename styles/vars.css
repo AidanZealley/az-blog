@@ -64,10 +64,12 @@
 
   --border-color: var(--shifting-shade-20);
 
-  --site-width: 72rem;
-  --content-width: 50em;
-  --para-width: 42em;
   --site-gutter: var(--spacing-m);
+
+  --site-width: calc(72rem + (var(--site-gutter) * 2));
+  --content-width: calc(50rem + (var(--site-gutter) * 2));
+  --para-width: calc(42rem + (var(--site-gutter) * 2));
+
   --header-height: 5rem;
 
   --easing: cubic-bezier(0.165, 0.84, 0.44, 1);

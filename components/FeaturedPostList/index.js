@@ -7,8 +7,8 @@ export const FeaturedPostList = ({ posts }) => {
   return (
     <div className={styles.list}>
       {posts.map(({ sys, coverImage, tags, slug, title}) => (
-        <Link href={`/blog/${slug}`}>
-          <a href={`/blog/${slug}`} key={sys.id} className={styles.post}>
+        <Link key={sys.id} href={`/blog/${slug}`}>
+          <a href={`/blog/${slug}`} className={styles.post}>
             <div>
               <div className={styles.imageWrap}>
                 {coverImage

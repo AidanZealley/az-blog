@@ -7,7 +7,7 @@
 .list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-s);
+  gap: var(--spacing-xs) var(--spacing-s);
 }
 
 .tag {

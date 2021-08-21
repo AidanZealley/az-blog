@@ -25,30 +25,31 @@
   --text-xxl: 3.2rem;
 
   --color-base: 200;
+  --saturation-base: 5%;
 
   --shade-0:  hsla(var(--color-base), 0%, 100%, 100%);
-  --shade-10:  hsla(var(--color-base), 5%, 90%, 100%);
-  --shade-20:  hsla(var(--color-base), 10%, 80%, 100%);
-  --shade-30:  hsla(var(--color-base), 15%, 70%, 100%);
-  --shade-40:  hsla(var(--color-base), 20%, 60%, 100%);
-  --shade-50:  hsla(var(--color-base), 25%, 50%, 100%);
-  --shade-60:  hsla(var(--color-base), 30%, 40%, 100%);
-  --shade-70:  hsla(var(--color-base), 35%, 30%, 100%);
-  --shade-80:  hsla(var(--color-base), 40%, 20%, 100%);
-  --shade-90:  hsla(var(--color-base), 45%, 10%, 100%);
+  --shade-10:  hsla(var(--color-base), calc(var(--saturation-base) * 1), 90%, 100%);
+  --shade-20:  hsla(var(--color-base), calc(var(--saturation-base) * 2), 80%, 100%);
+  --shade-30:  hsla(var(--color-base), calc(var(--saturation-base) * 3), 70%, 100%);
+  --shade-40:  hsla(var(--color-base), calc(var(--saturation-base) * 4), 60%, 100%);
+  --shade-50:  hsla(var(--color-base), calc(var(--saturation-base) * 5), 50%, 100%);
+  --shade-60:  hsla(var(--color-base), calc(var(--saturation-base) * 6), 40%, 100%);
+  --shade-70:  hsla(var(--color-base), calc(var(--saturation-base) * 7), 30%, 100%);
+  --shade-80:  hsla(var(--color-base), calc(var(--saturation-base) * 8), 20%, 100%);
+  --shade-90:  hsla(var(--color-base), calc(var(--saturation-base) * 9), 10%, 100%);
   --shade-100:  hsla(var(--color-base), 100%, 0, 100%);
 
-  --shifting-shade-0:  hsla(var(--color-base), 0%, 100%, 100%);
-  --shifting-shade-10:  hsla(var(--color-base), 5%, 90%, 100%);
-  --shifting-shade-20:  hsla(var(--color-base), 10%, 80%, 100%);
-  --shifting-shade-30:  hsla(var(--color-base), 15%, 70%, 100%);
-  --shifting-shade-40:  hsla(var(--color-base), 20%, 60%, 100%);
+  --shifting-shade-0:  var(--shade-0);
+  --shifting-shade-10:  var(--shade-10);
+  --shifting-shade-20:  var(--shade-20);
+  --shifting-shade-30:  var(--shade-30);
+  --shifting-shade-40:  var(--shade-40);
   --shifting-shade-50:  var(--shade-50);
-  --shifting-shade-60:  hsla(var(--color-base), 30%, 40%, 100%);
-  --shifting-shade-70:  hsla(var(--color-base), 35%, 30%, 100%);
-  --shifting-shade-80:  hsla(var(--color-base), 40%, 20%, 100%);
-  --shifting-shade-90:  hsla(var(--color-base), 45%, 10%, 100%);
-  --shifting-shade-100:  hsla(var(--color-base), 100%, 0, 100%);
+  --shifting-shade-60:  var(--shade-60);
+  --shifting-shade-70:  var(--shade-70);
+  --shifting-shade-80:  var(--shade-80);
+  --shifting-shade-90:  var(--shade-90);
+  --shifting-shade-100:  var(--shade-100);
 
   --brand-1: hsl(164, 100%, 45%);
 
@@ -80,14 +81,14 @@
     --brand-1: hsl(164, 100%, 50%);
 
     --shifting-shade-0:  hsla(var(--color-base), 100%, 0, 100%);
-    --shifting-shade-10:  hsla(var(--color-base), 45%, 10%, 100%);
-    --shifting-shade-20:  hsla(var(--color-base), 40%, 20%, 100%);
-    --shifting-shade-30:  hsla(var(--color-base), 35%, 30%, 100%);
-    --shifting-shade-40:  hsla(var(--color-base), 30%, 40%, 100%);
-    --shifting-shade-60:  hsla(var(--color-base), 20%, 60%, 100%);
-    --shifting-shade-70:  hsla(var(--color-base), 15%, 70%, 100%);
-    --shifting-shade-80:  hsla(var(--color-base), 10%, 80%, 100%);
-    --shifting-shade-90:  hsla(var(--color-base), 5%, 90%, 100%);
+    --shifting-shade-10:  hsla(var(--color-base), calc(var(--saturation-base) * 9), 10%, 100%);
+    --shifting-shade-20:  hsla(var(--color-base), calc(var(--saturation-base) * 8), 20%, 100%);
+    --shifting-shade-30:  hsla(var(--color-base), calc(var(--saturation-base) * 7), 30%, 100%);
+    --shifting-shade-40:  hsla(var(--color-base), calc(var(--saturation-base) * 6), 40%, 100%);
+    --shifting-shade-60:  hsla(var(--color-base), calc(var(--saturation-base) * 4), 60%, 100%);
+    --shifting-shade-70:  hsla(var(--color-base), calc(var(--saturation-base) * 3), 70%, 100%);
+    --shifting-shade-80:  hsla(var(--color-base), calc(var(--saturation-base) * 2), 80%, 100%);
+    --shifting-shade-90:  hsla(var(--color-base), calc(var(--saturation-base) * 1), 90%, 100%);
     --shifting-shade-100:  hsla(var(--color-base), 0%, 100%, 100%);
   }
 }

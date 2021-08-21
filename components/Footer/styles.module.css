@@ -1,5 +1,18 @@
 .footer {
   display: flex;
-  height: 5rem;
+  padding: var(--spacing-m) 0;
   border-top: 1px solid var(--border-color);
+}
+
+.bottomRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-s);
+}
+
+.contact {
+  flex: 1;
+  display: flex;
+  gap: var(--spacing-m);
+  justify-content: flex-end;
 }

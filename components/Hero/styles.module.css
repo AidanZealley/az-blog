@@ -16,10 +16,16 @@
   }
 }
 
+.heroLink:hover .hero:before {
+  --glow-color: var(--brand-1);
+}
+
 .hero:before {
+  --glow-color: var(--shifting-shade-50);
+
   content: "";
   background-color: var(--shifting-shade-20);
-  background-image: radial-gradient(circle at bottom, var(--shifting-shade-50), transparent);
+  background-image: radial-gradient(circle at bottom, var(--glow-color), transparent);
   border-radius: var(--radius-xs);
   position: absolute;
   top: calc(var(--spacing-xl) * -1);

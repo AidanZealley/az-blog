@@ -1,0 +1,8 @@
+.divider {
+  border: 0;
+  margin: 0 auto;
+  width: clamp(10vw, 10vw, 10rem);
+  height: 2px;
+  background-color: var(--shifting-shade-40);
+  border-radius: var(--radius-xs);
+}

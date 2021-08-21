@@ -27,14 +27,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--spacing-l);
+  gap: var(--spacing-m);
 }
 
 .summaryHeading {
   font-size: var(--text-xl);
   font-weight: 900;
   font-style: italic;
-  line-height: 1.1;
+  line-height: 1.2;
   width: 100%;
 }
 

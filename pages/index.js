@@ -1,12 +1,13 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import { config } from '@utils/config'
-import { getRecentPostList } from '../utils/contentful'
+import { getFeaturedPosts, getRecentPostList } from '../utils/contentful'
 import { Intro } from '@components/Intro'
 import { Container } from '@components/Container'
 import { PostList } from '@components/PostList'
+import { FeaturedPostList } from '@components/FeaturedPostList'
+import { Divider } from '@components/Divider'
 
-export default function Home({ recentPosts }) {
+export default function Home({ recentPosts, featuredPosts }) {
   const { title, description } = config;
 
   return (
@@ -26,12 +27,21 @@ export default function Home({ recentPosts }) {
         </div>
       </Intro>
 
-      <div className="flex-col gap-l mt-xl">
-        <Container>
-          <h2 className="weight-300">Latest Blog Post</h2>
-        </Container>
+      <div className="flex-col gap-xl mt-xl">
+        <div className="flex-col gap-l">
+          <Container>
+            <h2 className="weight-300">Latest Post</h2>
+          </Container>
 
-        <PostList posts={recentPosts}/>
+          <PostList posts={recentPosts}/>
+        </div>
+
+        <Divider/>
+
+        <Container size="content" className="flex-col gap-l">
+          <h2 className="weight-300">Featured Posts</h2>
+          <FeaturedPostList posts={featuredPosts}/>
+        </Container>
       </div>
     </>
   )
@@ -39,10 +49,12 @@ export default function Home({ recentPosts }) {
 
 export async function getStaticProps() {
   const recentPosts = await getRecentPostList();
+  const featuredPosts = await getFeaturedPosts();
 
   return {
     props: {
       recentPosts,
+      featuredPosts,
     },
   };
 }

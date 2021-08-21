@@ -8,7 +8,7 @@ export const PostTile = ({ slug, title, coverImage, tags }) => {
   return (
     <div className={`${styles.postTile}`}>
       <div className={styles.imageContainer}>
-        <Hero image={coverImage?.url} alt={coverImage?.description}/>
+        <Hero image={coverImage?.url} alt={coverImage?.description} href={`/blog/${slug}`}/>
       </div>
 
       <div className={styles.content}>
@@ -25,7 +25,7 @@ export const PostTile = ({ slug, title, coverImage, tags }) => {
           </h2>
 
           <div className="w-full max-w-xl">
-            <Button href={`/blog/${slug}`}>Read More</Button>
+            <Button href={`/blog/${slug}`}>Read Post</Button>
           </div>
         </div>
       </div>

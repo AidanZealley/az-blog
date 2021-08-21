@@ -9,9 +9,7 @@ export const TagLinks = ({ tags }) => {
 
       <div className={styles.list}>
         {tags.map((tag, index) => (
-          <Link key={index} href={`/posts/${tag}`}>
-            <a className={styles.tag}>{tag}</a>
-          </Link>
+          <span key={index} className={styles.tag}>{tag}</span>
         ))}
       </div>
     </div>

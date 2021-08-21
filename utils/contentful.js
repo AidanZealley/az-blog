@@ -94,7 +94,7 @@ export const getPageContentBySlug = async (slug) => {
     }
   }`;
 
-  const response = await queryContentful(query, options);
+  const response = await queryContentful(query);
 
   const pageContent = response.data.pageContentCollection.items
     ? response.data.pageContentCollection.items
@@ -238,4 +238,42 @@ export const getAllPostSlugs = async () => {
   }
 
   return returnSlugs;
+}
+
+export const getFeaturedPosts = async () => {
+  const query = `
+  {
+    blogPostCollection(where: {featured: true}) {
+      items {
+        sys {
+          id
+        }
+        date
+        title
+        slug
+        description
+        tags
+        coverImage {
+          title
+          description
+          url(transform: {
+            width: 300,
+            height: 300,
+            resizeStrategy: FILL,
+            resizeFocus: CENTER,
+            format: JPG,
+            quality: 80
+          })
+        }
+      }
+    }
+  }`;
+
+  const response = await queryContentful(query);
+
+  const featuredPosts = response.data.blogPostCollection.items
+    ? response.data.blogPostCollection.items
+    : [];
+
+  return featuredPosts;
 }

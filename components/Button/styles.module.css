@@ -4,6 +4,7 @@
   padding: var(--spacing-s) var(--spacing-m);
   font: inherit;
   font-weight: 900;
+  font-size: var(--text-xxs);
   color: var(--shade-90);
   border: 0;
   cursor: pointer;
@@ -21,7 +22,6 @@
 }
 
 .small {
-  font-size: var(--text-xxs);
   padding: var(--spacing-xs) var(--spacing-s);
 }
 

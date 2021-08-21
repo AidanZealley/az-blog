@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-m);
+  height: 100%;
 }
 
 .link {
@@ -11,19 +12,35 @@
   gap: var(--spacing-xs);
   font-weight: 300;
   position: relative;
+  height: 100%;
+  padding: var(--spacing-s) 0;
 }
 
 .link:hover {
+  color: var(--shifting-shade-90);
   text-decoration: none;
+}
+
+.link:after {
+  --line-size: 3px;
+
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: var(--line-size);
+  background-color: var(--shifting-shade-40);
+  border-radius: var(--radius-xs);
+  opacity: 0;
+  transform: translateY(calc(var(--spacing-xs) * -1))
 }
 
 .link:hover:after,
 .active:after {
-  content: "";
-  position: absolute;
-  top: calc(100% + var(--spacing-xs));
-  height: 3px;
-  width: 100%;
+  opacity: 1;
+}
+
+.active:after {
   background-color: var(--brand-1);
 }
 

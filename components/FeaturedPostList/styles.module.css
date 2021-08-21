@@ -1,6 +1,5 @@
 .list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: var(--spacing-l);
 }
 

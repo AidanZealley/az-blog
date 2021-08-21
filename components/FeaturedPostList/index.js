@@ -9,20 +9,18 @@ export const FeaturedPostList = ({ posts }) => {
       {posts.map(({ sys, coverImage, tags, slug, title}) => (
         <Link key={sys.id} href={`/blog/${slug}`}>
           <a href={`/blog/${slug}`} className={styles.post}>
-            <div>
-              <div className={styles.imageWrap}>
-                {coverImage
-                  ? <Image
-                      width={300}
-                      height={300}
-                      src={coverImage.url}
-                      alt={coverImage.description}
-                      className={styles.image}
-                      layout="responsive"
-                    />
-                  : ''
-                }
-              </div>
+            <div className={styles.imageWrap}>
+              {coverImage
+                ? <Image
+                    width={300}
+                    height={300}
+                    src={coverImage.url}
+                    alt={coverImage.description}
+                    className={styles.image}
+                    layout="responsive"
+                  />
+                : ''
+              }
             </div>
 
             <div className={styles.summary}>

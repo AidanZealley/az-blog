@@ -3,7 +3,7 @@ export const config = {
   description: 'Random stuff made by Aidan Zealley.',
   url: 'http://aidanzealley.com',
   pagination: {
-    pageSize: 2,
+    pageSize: 5,
     recentPostsSize: 1,
   },
   navLinks: [

@@ -22,7 +22,7 @@ export const PostHeader = ({ date, title, coverImage, tags, demoLink }) => {
           {demoLink
             ? <a className={styles.sticker} href={demoLink} target="_blank">
                 <span className={styles.stickerText}>
-                  Launch Demo
+                  Check It Out
                 </span>
                 <span className={styles.stickerIconWrap}>
                   <span className={styles.stickerIcon}>

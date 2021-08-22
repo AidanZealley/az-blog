@@ -8,13 +8,13 @@
   align-items: center;
   z-index: 10;
   border-bottom: 1px solid transparent;
-  transition: border 0.5s var(--easing);
+  transition: border 0.25s var(--easing);
   backdrop-filter: blur(0);
 }
 
 .header:before {
   opacity: 0;
-  transition: opacity 0.5s var(--easing);
+  transition: opacity 0.25s var(--easing);
 }
 
 .header.sticky {

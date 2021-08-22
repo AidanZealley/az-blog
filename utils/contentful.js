@@ -38,6 +38,7 @@ export const getPostBySlug = async (slug) => {
         slug
         description
         tags
+        demoLink
         coverImage {
           title
           description
@@ -50,8 +51,50 @@ export const getPostBySlug = async (slug) => {
             quality: 90
           })
         }
-        body
-        demoLink
+        postBody {
+          json
+          links {
+            entries {
+              inline {
+                sys {
+                  id
+                }
+                __typename
+                ... on BlogPost {
+                  title
+                  slug
+                }
+              }
+              block {
+                sys {
+                  id
+                }
+                __typename
+                ... on CodeBlock {
+                  description
+                  language
+                  code
+                }
+                ... on VideoEmbed {
+                  embedUrl
+                  title
+                }
+              }
+            }
+            assets {
+              block {
+                sys {
+                  id
+                }
+                url
+                title
+                width
+                height
+                description
+              }
+            }
+          }
+        }
       }
     }
   }`;

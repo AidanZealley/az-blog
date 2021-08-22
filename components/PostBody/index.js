@@ -1,14 +1,15 @@
-import ReactMarkdown from "react-markdown";
-import { Container } from '@components/Container';
-import { CodeBlock } from '@components/CodeBlock';
-import styles from './styles.module.css';
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import renderOptions from './render-options'
+import { Container } from '@components/Container'
+import styles from './styles.module.css'
 
-export const PostBody = ({ body }) => {
+export const PostBody = ({ postBody }) => {
+  console.log(postBody)
   return (
     <Container size="content">
       <div className={styles.body}>
-        <ReactMarkdown components={CodeBlock}>{body}</ReactMarkdown>
+        {documentToReactComponents(postBody.json, renderOptions(postBody.links))}
       </div>
     </Container>
-  );
-};
+  )
+}

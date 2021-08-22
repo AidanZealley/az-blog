@@ -5,9 +5,9 @@ import { PostHeader } from "@components/PostHeader";
 import { PostBody } from "@components/PostBody";
 
 export default function PostWrapper({ post }) {
-  const { date, title, coverImage, tags, body, demoLink } = post;
+  const { date, title, coverImage, tags, postBody, demoLink } = post;
 
-  console.log(body)
+  console.log(postBody)
 
   return (
     <>
@@ -19,7 +19,7 @@ export default function PostWrapper({ post }) {
 
       <div className="flex-col gap-xl">
         <PostHeader date={date} title={title} coverImage={coverImage} tags={tags} demoLink={demoLink}/>
-        <PostBody body={body}/>
+        <PostBody postBody={postBody}/>
       </div>
     </>
   );

@@ -3,12 +3,12 @@ import renderOptions from './render-options'
 import { Container } from '@components/Container'
 import styles from './styles.module.css'
 
-export const PostBody = ({ postBody }) => {
-  console.log(postBody)
+export const PostBody = ({ body }) => {
+  console.log(body)
   return (
     <Container size="content">
       <div className={styles.body}>
-        {documentToReactComponents(postBody.json, renderOptions(postBody.links))}
+        {documentToReactComponents(body.json, renderOptions(body.links))}
       </div>
     </Container>
   )

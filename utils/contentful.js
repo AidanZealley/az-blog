@@ -51,7 +51,7 @@ export const getPostBySlug = async (slug) => {
             quality: 90
           })
         }
-        postBody {
+        body {
           json
           links {
             entries {
@@ -105,45 +105,6 @@ export const getPostBySlug = async (slug) => {
     : [];
 
   return post.pop();
-}
-
-export const getPageContentBySlug = async (slug) => {
-  const query = `
-  {
-    pageContentCollection(limit: 1, where: {slug: "${slug}"}) {
-      items {
-        sys {
-          id
-        }
-        date
-        title
-        slug
-        description
-        tags
-        coverImage {
-          title
-          description
-          url(transform: {
-            width: 1800,
-            height: 1200,
-            resizeStrategy: FILL,
-            resizeFocus: CENTER,
-            format: JPG,
-            quality: 90
-          })
-        }
-        body
-      }
-    }
-  }`;
-
-  const response = await queryContentful(query);
-
-  const pageContent = response.data.pageContentCollection.items
-    ? response.data.pageContentCollection.items
-    : [];
-
-  return pageContent.pop();
 }
 
 export const getTotalPostsNumber = async () => {

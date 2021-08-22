@@ -61,6 +61,7 @@ const renderOptions = (links) => {
             height={asset.height}
             width={asset.width}
             alt={asset.description}
+            layout="responsive"
           />
         );
       },

@@ -51,29 +51,29 @@
   --shifting-shade-90-hsl: var(--shade-90-hsl);
   --shifting-shade-100-hsl: var(--shade-100-hsl);
 
-  --shade-0:  hsl(var(--shade-0-hsl));
-  --shade-10:  hsl(var(--shade-10-hsl));
-  --shade-20:  hsl(var(--shade-20-hsl));
-  --shade-30:  hsl(var(--shade-30-hsl));
-  --shade-40:  hsl(var(--shade-40-hsl));
-  --shade-50:  hsl(var(--shade-50-hsl));
-  --shade-60:  hsl(var(--shade-60-hsl));
-  --shade-70:  hsl(var(--shade-70-hsl));
-  --shade-80:  hsl(var(--shade-80-hsl));
-  --shade-90:  hsl(var(--shade-90-hsl));
-  --shade-100:  hsl(var(--shade-100-hsl));
+  --shade-0: hsl(var(--shade-0-hsl));
+  --shade-10: hsl(var(--shade-10-hsl));
+  --shade-20: hsl(var(--shade-20-hsl));
+  --shade-30: hsl(var(--shade-30-hsl));
+  --shade-40: hsl(var(--shade-40-hsl));
+  --shade-50: hsl(var(--shade-50-hsl));
+  --shade-60: hsl(var(--shade-60-hsl));
+  --shade-70: hsl(var(--shade-70-hsl));
+  --shade-80: hsl(var(--shade-80-hsl));
+  --shade-90: hsl(var(--shade-90-hsl));
+  --shade-100: hsl(var(--shade-100-hsl));
 
-  --shifting-shade-0:  hsl(var(--shifting-shade-0-hsl));
-  --shifting-shade-10:  hsl(var(--shifting-shade-10-hsl));
-  --shifting-shade-20:  hsl(var(--shifting-shade-20-hsl));
-  --shifting-shade-30:  hsl(var(--shifting-shade-30-hsl));
-  --shifting-shade-40:  hsl(var(--shifting-shade-40-hsl));
-  --shifting-shade-50:  hsl(var(--shifting-shade-50-hsl));
-  --shifting-shade-60:  hsl(var(--shifting-shade-60-hsl));
-  --shifting-shade-70:  hsl(var(--shifting-shade-70-hsl));
-  --shifting-shade-80:  hsl(var(--shifting-shade-80-hsl));
-  --shifting-shade-90:  hsl(var(--shifting-shade-90-hsl));
-  --shifting-shade-100:  hsl(var(--shifting-shade-100-hsl));
+  --shifting-shade-0: hsl(var(--shifting-shade-0-hsl));
+  --shifting-shade-10: hsl(var(--shifting-shade-10-hsl));
+  --shifting-shade-20: hsl(var(--shifting-shade-20-hsl));
+  --shifting-shade-30: hsl(var(--shifting-shade-30-hsl));
+  --shifting-shade-40: hsl(var(--shifting-shade-40-hsl));
+  --shifting-shade-50: hsl(var(--shifting-shade-50-hsl));
+  --shifting-shade-60: hsl(var(--shifting-shade-60-hsl));
+  --shifting-shade-70: hsl(var(--shifting-shade-70-hsl));
+  --shifting-shade-80: hsl(var(--shifting-shade-80-hsl));
+  --shifting-shade-90: hsl(var(--shifting-shade-90-hsl));
+  --shifting-shade-100: hsl(var(--shifting-shade-100-hsl));
 
   --brand-1: hsl(164, 100%, 45%);
 

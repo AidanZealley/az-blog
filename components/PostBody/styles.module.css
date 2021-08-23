@@ -33,8 +33,6 @@
 }
 
 .imageWrap {
-  /* width: calc(100% + (var(--site-gutter) * 2));
-  margin-left: calc(var(--site-gutter) * -1); */
   margin-top: var(--spacing-s);
   margin-bottom: var(--spacing-s);
 }

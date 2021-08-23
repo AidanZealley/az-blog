@@ -4,7 +4,6 @@ import { Container } from '@components/Container'
 import styles from './styles.module.css'
 
 export const PostBody = ({ body }) => {
-  console.log(body)
   return (
     <Container size="content">
       <div className={styles.body}>

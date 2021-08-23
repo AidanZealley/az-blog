@@ -8,7 +8,7 @@ const BlogIndex = ({ posts, currentPage, totalPages }) => {
   const prevDisabled = parseInt(currentPage, 10) === 1
 
   return (
-    <div className="flex-col gap-xl">
+    <div className="grid gap-xl">
       <PostList posts={posts}/>
           
       <Pagination

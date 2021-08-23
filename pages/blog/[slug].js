@@ -17,7 +17,7 @@ export default function PostWrapper({ post }) {
         url={`${config.url}/${post.slug}`}
       />
 
-      <div className="flex-col gap-xl">
+      <div className="grid gap-xl">
         <PostHeader date={date} title={title} coverImage={coverImage} tags={tags} demoLink={demoLink}/>
         <PostBody body={body}/>
       </div>

@@ -24,9 +24,7 @@ export const PostTile = ({ slug, title, coverImage, tags }) => {
             <Link href={`/blog/${slug}`}>{title}</Link>
           </h2>
 
-          <div className="w-full max-w-xl">
-            <Button href={`/blog/${slug}`}>Read Post</Button>
-          </div>
+          <Button href={`/blog/${slug}`}>Read Post</Button>
         </div>
       </div>
     </div>

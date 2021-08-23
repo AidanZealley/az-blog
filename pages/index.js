@@ -21,14 +21,14 @@ export default function Home({ recentPosts, featuredPosts }) {
       </Head>
 
       <Intro>
-        <div className="flex-col gap-s">
+        <div className="grid gap-s">
           <h3 className="weight-300">Random stuff by</h3>
           <h1 className="italic">Aidan Zealley</h1>
         </div>
       </Intro>
 
-      <div className="flex-col gap-xl mt-xl">
-        <div className="flex-col gap-l">
+      <div className="grid gap-xl mt-xl">
+        <div className="grid gap-l">
           <Container>
             <h2 className="weight-300">Latest Post</h2>
           </Container>
@@ -38,7 +38,7 @@ export default function Home({ recentPosts, featuredPosts }) {
 
         <Divider/>
 
-        <Container size="content" className="flex-col gap-l">
+        <Container size="content" className="grid gap-l">
           <h2 className="weight-300">Featured Posts</h2>
           <FeaturedPostList posts={featuredPosts}/>
         </Container>

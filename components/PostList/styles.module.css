@@ -3,7 +3,6 @@
 }
 
 .inner {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: var(--spacing-xxl);
 }

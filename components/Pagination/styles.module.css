@@ -6,20 +6,20 @@
 }
 
 .pages {
-  display: flex;
+  display: grid;
   justify-content: center;
   grid-column: 2;
 }
 
 .prev {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  justify-content: start;
   grid-column: 1;
 }
 
 .next {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  justify-content: end;
   grid-column: 3;
 }
 

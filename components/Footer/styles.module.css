@@ -1,18 +1,20 @@
 .footer {
-  display: flex;
+  display: grid;
   padding: var(--spacing-m) 0;
   border-top: 1px solid var(--border-color);
 }
 
 .bottomRow {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: var(--spacing-s);
 }
 
 .contact {
   flex: 1;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   gap: var(--spacing-m);
-  justify-content: flex-end;
+  justify-content: end;
 }

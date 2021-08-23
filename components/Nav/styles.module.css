@@ -7,7 +7,7 @@
 
 .link {
   font-size: var(--text-s);
-  display: flex;
+  display: grid;
   align-items: center;
   gap: var(--spacing-xs);
   font-weight: 300;

@@ -1,6 +1,5 @@
 .postTile {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: var(--spacing-m);
   padding-top: var(--spacing-xl);
 }
@@ -11,9 +10,9 @@
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: start;
   gap: var(--spacing-s);
   max-width: var(--content-width)
 }
@@ -24,9 +23,8 @@
 
 .summary {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  justify-items: start;
   gap: var(--spacing-m);
 }
 

@@ -1,6 +1,7 @@
 .layout {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
   gap: var(--spacing-xl);
   padding-top: var(--spacing-l);
   position: relative;
@@ -15,7 +16,3 @@
   background-image: radial-gradient(ellipse at top, var(--shifting-shade-20), transparent);
   background-position: top;
 } */
-
-.main {
-  flex: 1;
-}

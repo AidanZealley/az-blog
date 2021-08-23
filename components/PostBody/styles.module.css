@@ -36,6 +36,7 @@
 .imageWrap {
   margin-top: var(--spacing-s);
   margin-bottom: var(--spacing-s);
+  box-shadow: 0 var(--spacing-s) var(--spacing-l) hsla(var(--shifting-shade-0-hsl), 50%);
 }
 
 .body > * + :is(h1, h2, h3, h4, h5, h6) {

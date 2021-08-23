@@ -5,7 +5,7 @@
 
 .post {
   display: grid;
-  grid-template-columns: 25% 1fr;
+  grid-template-columns: clamp(5rem, 25%, 10rem) 1fr;
   gap: var(--spacing-m);
   position: relative;
 }

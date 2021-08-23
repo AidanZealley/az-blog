@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { CodeBlock } from '@components/CodeBlock'
+import styles from './styles.module.css'
 
 const renderOptions = (links) => {
   const assetMap = new Map();
@@ -56,13 +57,15 @@ const renderOptions = (links) => {
         const asset = assetMap.get(node.data.target.sys.id);
 
         return (
-          <Image
-            src={asset.url}
-            height={asset.height}
-            width={asset.width}
-            alt={asset.description}
-            layout="responsive"
-          />
+          <div className={styles.imageWrap}>
+            <Image
+              src={asset.url}
+              height={asset.height}
+              width={asset.width}
+              alt={asset.description}
+              layout="responsive"
+            />
+          </div>
         );
       },
     },

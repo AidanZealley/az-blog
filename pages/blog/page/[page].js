@@ -1,7 +1,7 @@
-import { getTotalPostsNumber, getPaginatedPostSummaries } from "@utils/contentful";
-import { config } from "@utils/config";
-import { PostList } from "@components/PostList";
-import { Pagination } from "@components/Pagination";
+import { getTotalPostsNumber, getPaginatedPostSummaries } from "@utils/contentful"
+import { config } from "@utils/config"
+import { PostList } from "@components/PostList"
+import { Pagination } from "@components/Pagination"
 
 export default function BlogIndexPage({ posts, totalPages, currentPage }) {
   const nextDisabled = parseInt(currentPage, 10) === parseInt(totalPages, 10)
@@ -18,30 +18,30 @@ export default function BlogIndexPage({ posts, totalPages, currentPage }) {
         prevDisabled={prevDisabled}
       />
     </div>
-  );
+  )
 }
 
 export async function getStaticPaths() {
-  const totalPosts = await getTotalPostsNumber();
-  const totalPages = Math.ceil(totalPosts / config.pagination.pageSize);
+  const totalPosts = await getTotalPostsNumber()
+  const totalPages = Math.ceil(totalPosts / config.pagination.pageSize)
 
-  const paths = [];
+  const paths = []
 
   for (let page = 2; page <= totalPages; page++) {
-    paths.push({ params: { page: page.toString() } });
+    paths.push({ params: { page: page.toString() } })
   }
 
   return {
     paths,
     fallback: false,
-  };
+  }
 }
 
 export async function getStaticProps({ params }) {
   const posts = await getPaginatedPostSummaries(
     params.page,
-  );
-  const totalPages = Math.ceil(posts.total / config.pagination.pageSize);
+  )
+  const totalPages = Math.ceil(posts.total / config.pagination.pageSize)
 
   return {
     props: {
@@ -49,5 +49,5 @@ export async function getStaticProps({ params }) {
       totalPages,
       currentPage: parseInt(params.page),
     },
-  };
+  }
 }

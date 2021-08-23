@@ -16,7 +16,7 @@
 .body > p > a {
   font-weight: 900;
   text-decoration: underline;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
 }
 
 .body > p > a:hover {

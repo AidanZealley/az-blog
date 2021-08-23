@@ -1,9 +1,9 @@
-import Head from "next/head";
-import { generateImageUrl } from "@utils/open-graph";
-import { config } from "@utils/config";
+import Head from 'next/head'
+import { generateImageUrl } from '@utils/open-graph'
+import { config } from '@utils/config'
 
 export const PageMeta = ({ title, description, url }) => {
-  const siteTitle = `${title} | ${config.title}`;
+  const siteTitle = `${title} | ${config.title}`
 
   return (
     <Head>
@@ -28,5 +28,5 @@ export const PageMeta = ({ title, description, url }) => {
 
       <link rel="icon" href="/favicon.ico" />
     </Head>
-  );
+  )
 }

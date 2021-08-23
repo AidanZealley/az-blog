@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { TagLinks } from '@components/TagLinks';
+import Link from 'next/link'
+import Image from 'next/image'
+import { TagLinks } from '@components/TagLinks'
 import styles from './styles.module.css'
 
 export const FeaturedPostList = ({ posts }) => {

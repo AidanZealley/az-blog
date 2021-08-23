@@ -1,4 +1,4 @@
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import renderOptions from './render-options'
 import { Container } from '@components/Container'
 import styles from './styles.module.css'

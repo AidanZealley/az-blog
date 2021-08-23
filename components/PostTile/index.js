@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import { Hero } from '@components/Hero';
-import { TagLinks } from '@components/TagLinks';
-import { Button } from '@components/Button';
-import styles from './styles.module.css';
+import Link from 'next/link'
+import { Hero } from '@components/Hero'
+import { TagLinks } from '@components/TagLinks'
+import { Button } from '@components/Button'
+import styles from './styles.module.css'
 
 export const PostTile = ({ slug, title, coverImage, tags }) => {
   return (
@@ -28,5 +28,5 @@ export const PostTile = ({ slug, title, coverImage, tags }) => {
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import LocalOfferRoundedIcon from '@material-ui/icons/LocalOfferRounded';
-import styles from './styles.module.css';
+import Link from 'next/link'
+import LocalOfferRoundedIcon from '@material-ui/icons/LocalOfferRounded'
+import styles from './styles.module.css'
 
 export const TagLinks = ({ tags }) => {
   return (
@@ -13,5 +13,5 @@ export const TagLinks = ({ tags }) => {
         ))}
       </div>
     </div>
-  );
+  )
 }

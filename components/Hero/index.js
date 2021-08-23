@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import styles from './styles.module.css';
+import Link from 'next/link'
+import Image from 'next/image'
+import styles from './styles.module.css'
 
 const Component = ({ image, alt }) => {
   return (
@@ -25,5 +25,5 @@ export const Hero = ({ image, alt, href }) => {
     ) : (
       <Component image={image} alt={alt}/>
     )
-  );
+  )
 }

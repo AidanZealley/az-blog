@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { BLOCKS, INLINES } from "@contentful/rich-text-types"
+import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 import { CodeBlock } from '@components/CodeBlock'
 import styles from './styles.module.css'
 
